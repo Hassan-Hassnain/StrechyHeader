@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		3C03B4FB2431557000E8CA90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C03B4FA2431557000E8CA90 /* AppDelegate.swift */; };
 		3C03B4FD2431557000E8CA90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C03B4FC2431557000E8CA90 /* SceneDelegate.swift */; };
-		3C03B4FF2431557000E8CA90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C03B4FE2431557000E8CA90 /* ViewController.swift */; };
+		3C03B4FF2431557000E8CA90 /* StrechyHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C03B4FE2431557000E8CA90 /* StrechyHeaderVC.swift */; };
 		3C03B5022431557000E8CA90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C03B5002431557000E8CA90 /* Main.storyboard */; };
 		3C03B5042431557300E8CA90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C03B5032431557300E8CA90 /* Assets.xcassets */; };
 		3C03B5072431557300E8CA90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C03B5052431557300E8CA90 /* LaunchScreen.storyboard */; };
+		3C03B50F2431581100E8CA90 /* MyHeaderClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C03B50E2431581100E8CA90 /* MyHeaderClass.swift */; };
+		3C958B172431E88400643AED /* MyHeaderClass.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C958B162431E88400643AED /* MyHeaderClass.xib */; };
+		3CB1712E2432439C00C7818A /* StrechyHeaderLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB1712D2432439C00C7818A /* StrechyHeaderLayout.swift */; };
+		3CB17130243268F600C7818A /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB1712F243268F600C7818A /* Extensions+UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3C03B4F72431557000E8CA90 /* StrechyHeader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrechyHeader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C03B4FA2431557000E8CA90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C03B4FC2431557000E8CA90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3C03B4FE2431557000E8CA90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3C03B4FE2431557000E8CA90 /* StrechyHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrechyHeaderVC.swift; sourceTree = "<group>"; };
 		3C03B5012431557000E8CA90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C03B5032431557300E8CA90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C03B5062431557300E8CA90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C03B5082431557300E8CA90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C03B50E2431581100E8CA90 /* MyHeaderClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHeaderClass.swift; sourceTree = "<group>"; };
+		3C958B162431E88400643AED /* MyHeaderClass.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyHeaderClass.xib; sourceTree = "<group>"; };
+		3CB1712D2432439C00C7818A /* StrechyHeaderLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrechyHeaderLayout.swift; sourceTree = "<group>"; };
+		3CB1712F243268F600C7818A /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,25 @@
 			children = (
 				3C03B4FA2431557000E8CA90 /* AppDelegate.swift */,
 				3C03B4FC2431557000E8CA90 /* SceneDelegate.swift */,
-				3C03B4FE2431557000E8CA90 /* ViewController.swift */,
+				3CB1712C2432439C00C7818A /* StrechyCollectionViewLayout */,
+				3C03B4FE2431557000E8CA90 /* StrechyHeaderVC.swift */,
 				3C03B5002431557000E8CA90 /* Main.storyboard */,
 				3C03B5032431557300E8CA90 /* Assets.xcassets */,
 				3C03B5052431557300E8CA90 /* LaunchScreen.storyboard */,
 				3C03B5082431557300E8CA90 /* Info.plist */,
+				3C03B50E2431581100E8CA90 /* MyHeaderClass.swift */,
+				3C958B162431E88400643AED /* MyHeaderClass.xib */,
+				3CB1712F243268F600C7818A /* Extensions+UIView.swift */,
 			);
 			path = StrechyHeader;
+			sourceTree = "<group>";
+		};
+		3CB1712C2432439C00C7818A /* StrechyCollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				3CB1712D2432439C00C7818A /* StrechyHeaderLayout.swift */,
+			);
+			path = StrechyCollectionViewLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C958B172431E88400643AED /* MyHeaderClass.xib in Resources */,
 				3C03B5072431557300E8CA90 /* LaunchScreen.storyboard in Resources */,
 				3C03B5042431557300E8CA90 /* Assets.xcassets in Resources */,
 				3C03B5022431557000E8CA90 /* Main.storyboard in Resources */,
@@ -138,8 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C03B4FF2431557000E8CA90 /* ViewController.swift in Sources */,
+				3C03B4FF2431557000E8CA90 /* StrechyHeaderVC.swift in Sources */,
 				3C03B4FB2431557000E8CA90 /* AppDelegate.swift in Sources */,
+				3CB17130243268F600C7818A /* Extensions+UIView.swift in Sources */,
+				3CB1712E2432439C00C7818A /* StrechyHeaderLayout.swift in Sources */,
+				3C03B50F2431581100E8CA90 /* MyHeaderClass.swift in Sources */,
 				3C03B4FD2431557000E8CA90 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
