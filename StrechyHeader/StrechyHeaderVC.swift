@@ -48,19 +48,40 @@ class StrechyHeaderVC: UICollectionViewController, UICollectionViewDelegateFlowL
             layout.sectionInset = .init(top: padding, left: padding, bottom: padding, right: padding)
         }
     }
-    
+    var shouldPrint: Bool = true
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let contentOffsetY = scrollView.contentOffset.y
         
-        if contentOffsetY > 0  {
-            headerView?.animatior.fractionComplete = 0
-            headerView?.animatior.stopAnimation(true)
-            return
+        if let state = headerView?.animatior.state , let animator = headerView?.animatior {
+            switch state {
+            case .active:
+                if contentOffsetY > 0  {
+                    
+                    if contentOffsetY > (headerView?.frame.size.height)! {
+                        animator.stopAnimation(false)
+                    } else {
+                        animator.fractionComplete = 0
+                        return
+                    }
+
+                }
+                
+            case .stopped:
+                if contentOffsetY < (headerView?.frame.size.height)! {
+                    animator.finishAnimation(at: .start)
+                }
+            default:
+                animator.addAnimations {
+                    self.headerView?.setupBlueView()
+                    self.headerView?.animatior.fractionComplete = 0//CGFloat(abs(contentOffsetY) / 200)
+                }
+            }
         }
-       
-            headerView?.animatior.fractionComplete = CGFloat(abs(contentOffsetY) / 200)
-   
+        
+        headerView?.animatior.fractionComplete = CGFloat(abs(contentOffsetY) / 200)
+        
     }
+
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String,
                                  at indexPath: IndexPath) -> UICollectionReusableView {
         
